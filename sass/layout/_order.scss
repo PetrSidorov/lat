@@ -1,0 +1,47 @@
+.webp .order{
+    background-image: url(../img/banner.webp);
+    background-size: cover;
+    // width: 100%;
+}
+
+.no-webp .order {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    // width: 100%;
+}
+.order{
+   
+    height: 500px;
+    margin-bottom: 98px;
+
+    @media (max-width: 800px){
+        height: 300px;
+    }
+
+    &__header{
+        color: $color-white;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__box{
+        max-width: 540px;
+        padding-top: 100px;
+        margin: auto;
+        
+        p{
+            text-align: center;
+            font-weight: bold;
+            font-size: 54px;
+            line-height: 63px;
+            color: $color-white;
+            margin-bottom: 50px; 
+        }
+
+        button{
+            display: block;
+            margin: auto;
+        }
+    }
+}
+

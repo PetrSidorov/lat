@@ -1,0 +1,60 @@
+.faq{
+
+  @include container
+
+  &__header{
+    text-align: center;
+    margin: 0 auto 16px;
+  }
+}
+
+.accordion { 
+  background: $color-grey;
+  border-radius: 10px;
+  display: block;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 35px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 400ms ease all;
+  margin-bottom: 9px;
+
+  &__text{
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+    
+    @media (max-width: 800px){
+      font-size: 1.3rem;
+      line-height: 1.2rem;
+  }
+  }
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 18px;
+  display: none;
+  background-color: $color-white;
+  overflow: hidden;
+}
+
+.triangle{
+  transition: 400ms ease all;
+}
+
+.animate{
+  transform: rotate(180deg);
+}

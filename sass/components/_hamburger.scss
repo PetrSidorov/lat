@@ -1,0 +1,45 @@
+#burger {
+ z-index: 2;
+ cursor: pointer;
+ 
+  &.color-change{
+    div {
+      background-color: black;  
+    }
+    
+  }
+
+  div {
+    width: 35px;
+    height: 5px;
+    background-color: $color-white;
+    margin: 6px 0;
+    border-radius: 3px;
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+    
+  }
+
+  div:first-child.show {
+    transform: translateY(12px) rotate(135deg);
+  }
+
+  div.show {
+    transform: scale(0);
+  }  
+
+  div:last-child.show {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  
+}
+
+@media (min-width: 650px) { 
+  #burger {
+    display: none;
+  }
+}
+
+
